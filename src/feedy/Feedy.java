@@ -5,6 +5,9 @@
  */
 package feedy;
 
+import feedy.view.MainWindow;
+import feedy.view.WelcomeView;
+
 /**
  *
  * @author Sebastian
@@ -16,6 +19,15 @@ public class Feedy {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        System.out.println("Hello World!!");
+        
+        MainWindow mainWindow = new MainWindow();
+        mainWindow.setVisible(true);
+        
+        WelcomeView welcomeView = new WelcomeView();
+        welcomeView.setVisible(true);
+        mainWindow.setContentPane(welcomeView);
     }
     
 }

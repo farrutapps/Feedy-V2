@@ -27,10 +27,13 @@ public class SurveyItem extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        buttonGroup3 = new javax.swing.ButtonGroup();
         boarderContainer = new javax.swing.JPanel();
         buttonContainer = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         labelContainer = new javax.swing.JPanel();
         surveyTypeLabel = new javax.swing.JLabel();
         placeLabel = new javax.swing.JLabel();
@@ -39,25 +42,20 @@ public class SurveyItem extends javax.swing.JPanel {
 
         boarderContainer.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        buttonContainer.setLayout(new java.awt.GridLayout());
+        buttonContainer.setLayout(new java.awt.GridLayout(1, 0));
 
-        jButton1.setText("Typ Ändern");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setText("Auswertung");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
-        buttonContainer.add(jButton1);
+        buttonContainer.add(jButton3);
 
-        jButton2.setText("Löschen");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        buttonContainer.add(jButton2);
+        jButton4.setText("Löschen");
+        buttonContainer.add(jButton4);
 
-        labelContainer.setLayout(new java.awt.GridLayout());
+        labelContainer.setLayout(new java.awt.GridLayout(1, 0));
 
         surveyTypeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         surveyTypeLabel.setText("Seminartyp");
@@ -82,7 +80,7 @@ public class SurveyItem extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, boarderContainerLayout.createSequentialGroup()
                 .addComponent(labelContainer, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(buttonContainer, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
+                .addComponent(buttonContainer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         boarderContainerLayout.setVerticalGroup(
@@ -103,22 +101,21 @@ public class SurveyItem extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jButton3ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel boarderContainer;
     private javax.swing.JPanel buttonContainer;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.JLabel counterLabel;
     private javax.swing.JLabel dateLabel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JPanel labelContainer;
     private javax.swing.JLabel placeLabel;
     private javax.swing.JLabel surveyTypeLabel;
