@@ -9,12 +9,12 @@ package feedy.view;
  *
  * @author ratz
  */
-public class evaluationView extends javax.swing.JPanel {
+public class EvaluationView extends javax.swing.JPanel {
 
     /**
      * Creates new form evaluationView
      */
-    public evaluationView() {
+    public EvaluationView() {
         initComponents();
     }
 
