@@ -27,10 +27,7 @@ public class Controller {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                AddSurveyView addSurveyView = new AddSurveyView();
-                mainWindow.setContentPane(addSurveyView);
-                mainWindow.validate();
-                mainWindow.pack();
+                mainWindow.setPanel(new AddSurveyView());
             }
         };
         

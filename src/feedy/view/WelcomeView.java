@@ -14,10 +14,11 @@ import javax.accessibility.AccessibleRelation;
  *
  * @author Sebastian
  */
-public class WelcomeView extends javax.swing.JPanel {
+public class WelcomeView extends BasePanel {
 
     /**
      * Creates new form welcomePane
+     * @param cntrl
      */
     public WelcomeView(Controller cntrl) {
         controller = cntrl;
@@ -26,6 +27,8 @@ public class WelcomeView extends javax.swing.JPanel {
         
         newSurveyBtn.addActionListener(controller.getActionListenerAddSurveyBtn());
     };
+
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

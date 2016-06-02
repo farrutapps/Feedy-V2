@@ -6,15 +6,16 @@
 package feedy;
 
 import feedy.Controller.Controller;
+import feedy.view.AddSurveyView;
+import feedy.view.EvaluationItem;
 import feedy.view.MainWindow;
-import feedy.view.WelcomeView;
-import feedy.view.*;
+import feedy.view.ProgressListener;
+import feedy.view.Destination;
 
-/**
- *
- * @author Sebastian
- */
-public class Feedy {
+
+
+
+public class Feedy  {
 
     /**
      * @param args the command line arguments
@@ -24,38 +25,16 @@ public class Feedy {
         
         System.out.println("Hello World!!");
         
-         MainWindow mainWindow = new MainWindow();
-         
-        Controller controller = new Controller();
-        controller.setMainWindow(mainWindow);
-        //view
-       
-       WelcomeView welcomeView = new WelcomeView(controller);
-       
-       mainWindow.setContentPane(welcomeView);
-       mainWindow.setVisible(true);
-        // controller
-        
-        
-        // model
-        
-        
-        //set references according to MVC
-        
-        /*
-        
-       model     .addController(controller);
-	  view      .addController(controller);
-	  controller.addModel     (model);
-	  
-	  view.build();
-		view.setVisible(true);
-        */
-        
-        
-        
         
         
     }
+
+    
+
+   
+
+    
+
+   
     
 }
