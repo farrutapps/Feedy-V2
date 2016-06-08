@@ -5,16 +5,28 @@
  */
 package feedy.view;
 
+import feedy.Controller.Controller;
+
 /**
  *
  * @author Sebastian
  */
 public class DatabaseView extends javax.swing.JPanel {
+    private Controller controller;
+    private ProgressListener listener;
 
     /**
      * Creates new form databasePanel
      */
-    public DatabaseView() {
+   
+    /**
+     * Creates new form databasePanel
+     * @param controller
+     * @param listener
+     */
+    public DatabaseView(Controller controller, ProgressListener listener) {
+        this.controller = controller;
+        this.listener=listener;
         initComponents();
     }
 

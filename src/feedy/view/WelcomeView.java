@@ -9,23 +9,27 @@ import feedy.Controller.Controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.accessibility.AccessibleRelation;
+import javax.swing.JPanel;
 
 /**
  *
  * @author Sebastian
  */
-public class WelcomeView extends BasePanel {
-
+public class WelcomeView extends JPanel {
+    ProgressListener listener;
     /**
      * Creates new form welcomePane
      * @param cntrl
+     * @param listener
      */
-    public WelcomeView(Controller cntrl) {
+    public WelcomeView(Controller cntrl,ProgressListener listener) {
         controller = cntrl;
+        this.listener=listener;
+        
         initComponents();
         
         
-        newSurveyBtn.addActionListener(controller.getActionListenerAddSurveyBtn());
+       
     };
 
     
@@ -91,7 +95,7 @@ public class WelcomeView extends BasePanel {
     }//GEN-LAST:event_newSurveyBtnActionPerformed
 
     private void toDatabaseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toDatabaseBtnActionPerformed
-        // TODO add your handling code here:
+        this.listener.nextForm(Destination.DATABASE);        // TODO add your handling code here:
     }//GEN-LAST:event_toDatabaseBtnActionPerformed
     
     

@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS qstyle CASCADE;
+
+CREATE TABLE qstyle (
+questionstyle_id SERIAL PRIMARY KEY,
+surveytype_id INTEGER REFERENCES surveytypes ON UPDATE CASCADE ON DELETE CASCADE,
+style_type INTEGER
+
+);

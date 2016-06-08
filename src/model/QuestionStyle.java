@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package feedy.view;
+package model;
 
 /**
  *
  * @author ratz
  */
-public enum Destination {
-    ADDSURVEY, DATABASE, EVALUATION, NEXT_QUESTION_TYPE, PREVIOUS_QUESTION_TYPE, WELCOME
+public enum QuestionStyle {
+    MEAN_VALUE, SHARES, NUMBERS
+    
 }
